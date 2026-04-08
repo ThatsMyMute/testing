@@ -36,7 +36,7 @@ function Movement.FollowPath(character, points, speed, options)
 	assert(type(points) == "table" and #points > 0, "points must be a non-empty array")
 
 	options = options or {}
-	local reachRadius = options.reachRadius or 8
+	local reachRadius = options.reachRadius or 3
 	local slowRadius  = options.slowRadius  or 10
 	local onComplete  = options.onComplete
 	local onCancelled = options.onCancelled
