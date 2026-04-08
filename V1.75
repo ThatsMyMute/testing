@@ -53,6 +53,7 @@ end
 		local targetPos = points[currentIndex]
 		if not targetPos then
 			lv.VectorVelocity = Vector3.zero
+			print("finished")
 			connection:Disconnect()
 			return
 		end
